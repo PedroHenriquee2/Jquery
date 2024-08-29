@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(235, 231, 231);
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    padding-top: 100px;
+}
+
+.container{
+    display: flex;
+    max-width: 640px;
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: 10px 10px 5px rgba(0,0,0,0.5),-10px -10px 5px rgba(0,0,0,0.1);
+    border-radius: 24px;
+}
+
+.tarefas{
+    max-width: 640px;
+    width: 100%;
+    padding: 56px;
+    margin: 0 auto;
+}
+
+header{
+    background-color: rgb(235, 231, 231);
+    padding: 16px 0;
+    color: #fff;
+    display: flex;
+    border-bottom: 16px solid rgb(235, 231, 231);
+    justify-content: center;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+header button{
+    margin-left: 20px;
+}
+
+form{
+    background-color: rgb(235, 231, 231);
+    padding: 24px 0;
+    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+form h2{
+    margin-bottom: 16px;
+}
+
+input,
+button{
+    padding: 8px;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+button{
+    background-color: green;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+}
+
+#button-cancelar{
+    background-color: red;
+}
+
+input:focus{
+    outline: none;
+}
+
+.content{
+    display: flex;
+    margin-left: 20px;
+}
+
+ul li{
+    font-family: sans-serif;
+    padding: 5px;
+    cursor: pointer;
+    border-bottom: 1px solid #888;
+    padding: 12px;
+    width: 520px;
+}
+
+ul li.completed{
+    text-decoration: line-through;
+    color: #888;
+}
